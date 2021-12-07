@@ -1,0 +1,46 @@
+{
+  "eventType" : "com.oraclecloud.cloudguard.problemdetected",
+  "cloudEventsVersion" : "0.1",
+  "eventTypeVersion" : "2.0",
+  "source" : "CloudGuardResponderEngine",
+  "eventTime" : "2021-05-12T19:15:56Z",
+  "contentType" : "application/json",
+  "data" : {
+    "compartmentId" : "cid1.compartment.oc1..",
+    "compartmentName" : "Test",
+    "resourceName" : "Instance terminated",
+    "resourceId" : "ocid1.cloudguardproblem.oc1.iad.",
+    "additionalDetails" : {
+      "tenantId" : "ocid1.tenancy.oc1..",
+      "status" : "OPEN",
+      "reason" : "Existing Problem updated by CloudGuard",
+      "problemName" : "INSTANCE_TERMINATED",
+      "riskLevel" : "HIGH",
+      "problemType" : "ACTIVITY",
+      "resourceName" : "",
+      "resourceId" : "",
+      "resourceType" : "User",
+      "targetId" : "ocid1.cloudguardtarget.oc1.iad.",
+      "labels" : "Compute",
+      "firstDetected" : "2021-05-06T17:00:54.955Z",
+      "lastDetected" : "2021-05-06T19:15:42.294Z",
+      "region" : "us-ashburn-1",
+      "impactedResourceName" : "Unknown",
+      "impactedResourceId" : "ocid1.instance.oc1.iad.",
+      "impactedResourceType" : "Instance",
+      "problemAdditionalDetails" : {
+        "imageId" : "ocid1.image.oc1.iad.",
+        "shape" : "VM.Standard.E4.Flex",
+        "X-Real-Port" : "60732",
+        "type" : "CustomerVmi",
+        "tags" : "Frugal,Stopped"
+      },
+      "problemDescription" : "Compute instances may deliver critical functions. ",
+      "problemRecommendation" : "Ensure that the termination of the compute instance is sanctioned and performed by a permitted administrator."
+    }
+  },
+  "eventID" : "4ab99fc8-af39-4368-83ca-8c18c354b035",
+  "extensions" : {
+    "compartmentId" : "ocid1.compartment.oc1.."
+  }
+ }

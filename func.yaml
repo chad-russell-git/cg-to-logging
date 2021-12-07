@@ -1,0 +1,8 @@
+schema_version: 20180708
+name: cg-to-logging
+version: 0.0.16
+runtime: python
+entrypoint: /python/bin/fdk /function/func.py handler
+memory: 256
+config:
+  LOGGING_OCID: ocid1.log.oc1.iad.amaaaaaaxgkodxyansooq2d22mqpqcyy2avtd5sn3q2bf5cau4mjrgufxwca
